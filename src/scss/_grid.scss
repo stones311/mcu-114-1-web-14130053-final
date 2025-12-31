@@ -1,10 +1,11 @@
-div.grid {
+/* ----- GRID (作品集) ----- */
+.grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 10px;
 
-  > div.item {
-    border: solid 1px #ccc;
+  > .item {
+    border: 1px solid #ccc;
     border-radius: 30px;
     height: 200px;
     display: flex;
@@ -23,28 +24,21 @@ div.grid {
       margin: 0;
       font-size: 1.5rem;
     }
-
     strong {
       font-weight: normal;
       color: var(--text-color-second);
     }
-
     i {
       display: none;
     }
 
     &:hover {
       cursor: pointer;
-      border: solid 2px var(--first-color-hover);
-
-      h4 {
-        color: var(--first-color-hover);
-      }
-
+      border: 2px solid var(--first-color-hover);
+      h4,
       strong {
         color: var(--first-color-hover);
       }
-
       i {
         display: block;
         margin-top: 10px;
@@ -52,4 +46,10 @@ div.grid {
       }
     }
   }
+}
+
+/* link */
+a {
+  text-decoration: inherit;
+  color: inherit;
 }

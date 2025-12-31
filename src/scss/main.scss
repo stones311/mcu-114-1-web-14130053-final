@@ -1,8 +1,9 @@
-@use "./variable";
+@use "./variables";
 @use "./base";
-@use "./buttons";
 @use "./nav";
 @use "./featured";
-@use "./sections";
+@use "./about";
+@use "./skills";
+@use "./contact";
+@use "./footer";
 @use "./grid";
-@use "./responsive";

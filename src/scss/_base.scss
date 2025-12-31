@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
+/* ----- BASE ----- */
 * {
   margin: 0;
   padding: 0;
@@ -11,6 +12,7 @@ html {
   scroll-behavior: smooth;
 }
 
+/* scrollbar */
 ::-webkit-scrollbar {
   width: 10px;
   border-radius: 25px;
@@ -26,19 +28,33 @@ html {
   background: #bbb;
 }
 
-body {
-  background: var(--body-color);
+/* button */
+.btn {
+  font-weight: 500;
+  padding: 12px 20px;
+  background: #efefef;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.btn > i {
+  margin-left: 10px;
+}
+.btn:hover {
+  background: var(--second-color);
+  color: var(--color-white);
 }
 
-a {
-  text-decoration: inherit;
-  color: inherit;
-}
-
+/* icon */
 i {
   font-size: 16px;
 }
 
+/* body & container */
+body {
+  background: var(--body-color);
+}
 .container {
   width: 100%;
   position: relative;

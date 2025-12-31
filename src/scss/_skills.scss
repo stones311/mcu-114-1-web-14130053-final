@@ -1,0 +1,50 @@
+/* ----- SKILLS ----- */
+.section#skills {
+  .top-header {
+    text-align: center;
+    margin-bottom: 5em;
+    h1 {
+      font-weight: 600;
+      color: var(--text-color-second);
+      margin-bottom: 10px;
+    }
+    span {
+      color: #999;
+    }
+  }
+
+  .skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+
+    .skills-item {
+      display: flex;
+      flex-direction: column;
+      width: calc(50% - 20px);
+      gap: 5px;
+
+      .skill {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        span {
+          &:first-child {
+            font-weight: 500;
+          }
+        }
+      }
+
+      .progress-bar-wrap {
+        height: 10px;
+        border: 1px solid #ccc;
+
+        .progress-bar {
+          height: 10px;
+          background-color: var(--first-color);
+        }
+      }
+    }
+  }
+}
